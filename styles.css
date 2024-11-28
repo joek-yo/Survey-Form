@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 380px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+h1 {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 8px;
+  color: #666;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Input and Form Elements */
+label {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: #555;
+  font-size: 0.8rem;
+}
+
+input, textarea, select, button {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Radio and Checkbox Groups */
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 6px; 
+  margin-bottom: 10px;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center; 
+  color: #555;
+  margin: 0; 
+  white-space: nowrap;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-right: 8px; 
+  transform: scale(1.1); 
+  vertical-align: middle;
+}
+
+/* Fieldset and Legend Styles */
+fieldset {
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+legend {
+  font-weight: bold;
+  color: #007bff;
+  padding: 0 6px;
+  font-size: 0.85rem;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+/* Button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 10px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  input, textarea, select, button {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 0.85rem;
+  }
+
+  .checkbox-group {
+    gap: 6px;
+  }
+}

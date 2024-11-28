@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the form below to help us understand your preferences.</p>
+        <form id="survey-form" action="#" method="post">
+            <!-- Name Field -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label id="name-label" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label id="email-label" for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                
+                <label id="number-label" for="number">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="18" max="99" required>
+            </fieldset>
+            
+            <!-- Dropdown -->
+            <fieldset>
+                <legend>Survey Questions</legend>
+                <label for="dropdown">What is your favorite programming language?</label>
+                <select id="dropdown" name="language" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="csharp">C#</option>
+                </select>
+                
+                <!-- Radio Buttons -->
+                <p>How often do you code?</p>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="frequency" value="daily" required> Daily
+                    </label>
+                    <label>
+                        <input type="radio" name="frequency" value="weekly" required> Weekly
+                    </label>
+                    <label>
+                        <input type="radio" name="frequency" value="monthly" required> Monthly
+                    </label>
+                </div>
+                
+                <!-- Checkboxes -->
+                <p>What topics are you interested in? (Select all that apply)</p>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="interest" value="frontend"> Frontend Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="backend"> Backend Development
+                    </label>
+                    <label>
+                        <input type="checkbox" name="interest" value="devops"> DevOps
+                    </label>
+                </div>
+                
+                <!-- Textarea -->
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Share any feedback or thoughts..."></textarea>
+            </fieldset>
+            
+            <!-- Submit Button -->
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
